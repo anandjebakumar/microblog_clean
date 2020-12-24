@@ -1,2 +1,12 @@
+import os
+from dotenv import load_dotenv
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
+
 class Config():
-    SECRET_KEY='arfegwectitjamourxighrntu4maxtia4587348957jimrctawgru'
+    SECRET_KEY=os.environ.get('SECRET_KEY')
+
+    # database stuff
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir,'app.db')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
