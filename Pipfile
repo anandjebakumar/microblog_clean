@@ -9,6 +9,8 @@ flask-wtf = "*"
 python-dotenv = "*"
 flask-migrate = "*"
 flask-sqlalchemy = "*"
+flask-login = "*"
+email-validator = "*"
 
 [dev-packages]
 
