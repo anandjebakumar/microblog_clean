@@ -1,0 +1,47 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}
+        {{ title }} - Microblog
+    {% else %}
+        Welcome to Microblog
+    {% endif %}
+{% endblock title %}
+
+{% block navbar %}
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="{{ url_for('index') }}" >Home</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_anonymous %}
+                    <a href="{{ url_for('login') }}">Login</a>
+                {% else %}
+                    <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+{% endblock navbar %}
+
+{% block content %}
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-info" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    {% block app_content %}
+        
+    {% endblock app_content %}
+{% endblock content %}

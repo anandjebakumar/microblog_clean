@@ -11,6 +11,7 @@ flask-migrate = "*"
 flask-sqlalchemy = "*"
 flask-login = "*"
 email-validator = "*"
+flask-bootstrap = "*"
 
 [dev-packages]
 
