@@ -14,9 +14,9 @@ login = LoginManager()
 login.login_view = 'login'
 #bootstrap = Bootstrap()
 
-def create_app(config_file='config.Config'):
+def create_app(config_class='config.Config'):
     app = Flask(__name__)
-    app.config.from_object(config_file)
+    app.config.from_object(config_class)
 
     db.init_app(app)
     migrate.init_app(app, db)

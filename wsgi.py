@@ -1,7 +1,7 @@
 from application import create_app
 import os
 
-app = create_app(config_file='config.Config')
+app = create_app(config_class='config.Config')
 
 watch_files = []
 template_dir = 'application/templates'
