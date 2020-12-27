@@ -1,4 +1,4 @@
-2020-12-26 13:23:21,765 ERROR: Exception on /edit_profile [POST] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
+2020-12-25 11:36:00,235 ERROR: Exception on /edit_profile [POST] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\sqlalchemy\engine\base.py", line 1276, in _execute_context
     self.dialect.do_execute(
@@ -23,7 +23,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 109, in edit_profile
+  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 100, in edit_profile
     db.session.commit()
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\sqlalchemy\orm\scoping.py", line 163, in do
     return getattr(self.registry(), name)(*args, **kwargs)
@@ -71,27 +71,26 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed
 [SQL: UPDATE user SET username=? WHERE user.id = ?]
 [parameters: ('Susan', 3)]
 (Background on this error at: http://sqlalche.me/e/13/gkpj)
-2020-12-26 18:33:44,694 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
-2020-12-26 18:35:41,749 ERROR: Exception on /reset_password_request [POST] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 185, in reset_password_request
-    send_password_reset_email(user)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\email.py", line 13, in send_password_reset_email
-    token = user.get_reset_password_token()
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\models.py", line 109, in get_reset_password_token
-    return jwt.encode(
-AttributeError: 'str' object has no attribute 'decode'
-2020-12-26 19:20:10,786 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
-2020-12-26 19:23:14,859 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
+2020-12-25 11:36:20,154 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:63]
+2020-12-25 11:57:12,858 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-25 11:59:02,036 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-25 20:31:26,921 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-25 20:31:35,956 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-25 22:03:59,251 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,259 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,259 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,264 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,264 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,264 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,268 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,268 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,268 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:03:59,268 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,443 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,449 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,449 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,452 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,452 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,452 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,457 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]
+2020-12-25 22:04:38,457 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:67]

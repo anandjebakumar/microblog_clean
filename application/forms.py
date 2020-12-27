@@ -97,3 +97,31 @@ class PostForm(FlaskForm):
         ]
     )
     submit = SubmitField('Submit')
+
+class ResetPasswordRequestForm(FlaskForm):
+    email = StringField(
+        label='Email',
+        validators=[
+            DataRequired(),
+            Email()
+        ]
+    )
+    submit = SubmitField('Request password reset')
+
+class ResetPasswordForm(FlaskForm):
+    password = PasswordField(
+        label = 'Password',
+        validators=[
+            DataRequired()
+        ]
+    )
+    repeat_password = PasswordField(
+        label = 'Repeat password',
+        validators=[
+            DataRequired(),
+            EqualTo('password')
+        ]
+    )
+    submit = SubmitField(
+        label='Request password reset'
+    ) 

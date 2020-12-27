@@ -1,16 +1,6 @@
-2020-12-25 22:18:20,400 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,518 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,518 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,604 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,604 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,604 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,722 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,722 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,722 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:18:20,722 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-25 22:35:04,444 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-26 10:55:38,059 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-26 10:55:47,630 ERROR: Exception on / [GET] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
+2020-12-26 11:15:16,752 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 11:28:27,545 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 11:28:43,876 ERROR: Exception on /user/Susan [GET] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -26,29 +16,11 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 22, in index
-    return render_template('index.html',title='Home',posts=posts)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\templating.py", line 137, in render_template
-    return _render(
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\templating.py", line 120, in _render
-    rv = template.render(context)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\jinja2\environment.py", line 1090, in render
-    self.environment.handle_exception()
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\jinja2\_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\index.html", line 1, in top-level template code
-    {% extends 'base.html' %}
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\base.html", line 38, in top-level template code
-    {% block app_content %}
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\index.html", line 10, in block "app_content"
-    {{ form.hidden_tag() }}
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\jinja2\environment.py", line 471, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'form' is undefined
-2020-12-26 10:56:13,551 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
-2020-12-26 10:56:17,056 ERROR: Exception on / [GET] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
+  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 79, in user
+    posts = user.posts.oder_by(Post.timestamp.desc()).paginate(
+AttributeError: 'AppenderBaseQuery' object has no attribute 'oder_by'
+2020-12-26 11:29:04,279 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 11:29:09,451 ERROR: Exception on /user/Susan [GET] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -64,8 +36,8 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 22, in index
-    return render_template('index.html',title='Home',posts=posts)
+  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 91, in user
+    return render_template('user.html', user=user, posts=posts, form=form,
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\templating.py", line 137, in render_template
     return _render(
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\templating.py", line 120, in _render
@@ -76,12 +48,17 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\index.html", line 1, in top-level template code
+  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\user.html", line 1, in top-level template code
     {% extends 'base.html' %}
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\base.html", line 38, in top-level template code
+  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\base.html", line 39, in top-level template code
     {% block app_content %}
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\index.html", line 10, in block "app_content"
-    {{ form.hidden_tag() }}
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\jinja2\environment.py", line 471, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'form' is undefined
+  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\templates\user.html", line 49, in block "app_content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2020-12-26 11:29:27,543 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 11:31:01,361 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 11:32:29,748 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 11:36:45,170 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:66]
+2020-12-26 12:18:16,923 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
+2020-12-26 13:21:35,774 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
+2020-12-26 13:23:06,495 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]

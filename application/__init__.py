@@ -6,12 +6,14 @@ import logging
 from logging.handlers import SMTPHandler
 from logging.handlers import RotatingFileHandler
 import os
+from flask_mail import Mail
 #from flask_bootstrap import Bootstrap
 
 db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
 login.login_view = 'login'
+mail = Mail()
 #bootstrap = Bootstrap()
 
 def create_app(config_class='config.Config'):
@@ -21,6 +23,7 @@ def create_app(config_class='config.Config'):
     db.init_app(app)
     migrate.init_app(app, db)
     login.init_app(app)
+    mail.init_app(app)
     #bootstrap.init_app(app)
 
     with app.app_context():

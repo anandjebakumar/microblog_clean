@@ -12,6 +12,8 @@ flask-sqlalchemy = "*"
 flask-login = "*"
 email-validator = "*"
 flask-bootstrap = "*"
+flask-mail = "*"
+pyjwt = "*"
 
 [dev-packages]
 
