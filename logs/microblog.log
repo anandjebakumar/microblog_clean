@@ -46,3 +46,5 @@ AttributeError: 'str' object has no attribute 'decode'
 2020-12-26 19:30:42,700 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
 2020-12-26 19:31:26,837 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
 2020-12-26 19:33:40,710 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
+2020-12-26 19:36:44,871 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
+2020-12-26 19:40:48,875 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:69]
