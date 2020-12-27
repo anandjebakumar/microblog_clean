@@ -1,4 +1,5 @@
-2020-12-25 11:12:16,855 ERROR: Exception on /edit_profile [POST] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
+2020-12-25 11:09:29,866 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:63]
+2020-12-25 11:10:25,682 ERROR: Exception on /edit_profile [POST] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\sqlalchemy\engine\base.py", line 1276, in _execute_context
     self.dialect.do_execute(
@@ -69,31 +70,6 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username
 [SQL: UPDATE user SET username=?, about_me=? WHERE user.id = ?]
-[parameters: ('Anand', 'I am susan. Making an edit here.', 1)]
+[parameters: ('susan', 'Hi, I am Anand Samuel. I am learning how to do a Flask app.', 3)]
 (Background on this error at: http://sqlalche.me/e/13/gkpj)
-2020-12-25 11:34:13,298 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:63]
-2020-12-25 11:34:21,457 ERROR: Exception on /edit_profile [GET] [in c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\routes.py", line 96, in edit_profile
-    form = EditProfileForm(current_user.username)
-  File "c:\users\jebakuma\.virtualenvs\microblog_clean-uu0fvpk6\lib\site-packages\wtforms\form.py", line 208, in __call__
-    return type.__call__(cls, *args, **kwargs)
-  File "C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\forms.py", line 80, in __init__
-    self.original_username = original_username
-NameError: name 'original_username' is not defined
-2020-12-25 11:34:49,579 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:63]
-2020-12-25 11:35:43,954 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:63]
+2020-12-25 11:11:12,819 INFO: Microblog startup [in C:\Users\jebakuma\OneDrive - HP Inc\learning\flask\flask-mega-tutorial-miguel-grinberg\microblog_clean\application\__init__.py:63]

@@ -25,4 +25,4 @@ class Config():
     #MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
 
     # pagination
-    POSTS_PER_PAGE = 3
+    POSTS_PER_PAGE = 5
